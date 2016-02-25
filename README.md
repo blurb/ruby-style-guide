@@ -993,6 +993,19 @@ Translations of the guide are available in the following languages:
   multi_line_method unless success?
   ```
 
+* <a name="no-complex-unless"></a>
+  Avoid using unless conditional over multiple conditions
+<sup>[[link](#no-complex-unless)]</sup>
+
+  ```Ruby
+  # bad
+  do_something unless a and b or !c
+
+  # good
+  multi_line_method unless success?
+  ```
+
+
 * <a name="no-nested-modifiers"></a>
   Avoid nested modifier `if/unless/while/until` usage. Favor `&&/||` if
   appropriate.
