@@ -1002,7 +1002,7 @@ Translations of the guide are available in the following languages:
   do_something unless a and b or !c
 
   # good
-  multi_line_method unless success?
+  do_something unless success?
   ```
 
 
