@@ -979,6 +979,20 @@ Translations of the guide are available in the following languages:
   end
   ```
 
+* <a name="no-multiline-unless-blocks"></a>
+  Avoid using unless conditional over multiple lines
+<sup>[[link](#no-multiline-else-blocks)]</sup>
+
+  ```Ruby
+  # bad
+  unless success?
+    # multi-line body omitted
+  end
+
+  # good
+  multi_line_method unless success?
+  ```
+
 * <a name="no-nested-modifiers"></a>
   Avoid nested modifier `if/unless/while/until` usage. Favor `&&/||` if
   appropriate.
